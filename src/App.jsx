@@ -4,10 +4,13 @@ import './App.css'
 import amitroy2 from '/images/amitroy2.jpg'
 import { AiFillLinkedin, AiFillGithub, AiFillMessage, AiFillInstagram } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
+import { TypeAnimation } from 'react-type-animation';
+
+
+
 
 
 function App() {
-
 
   return (
     <>
@@ -38,7 +41,9 @@ function App() {
         <div className="container">
           <div className="banner_img">
             <div className="banner_title">
-              <h2>MERN Full Stack Developer</h2>
+              <h2><TypeAnimation
+                sequence={['MERN Full Stack Developer', 3000]}
+              /></h2>
               <h1>Amit Roy</h1>
               <h3>React.js || MongoDB || Express.js || Node.js || React Native</h3>
               <button className='btn'>Explore Me</button><button className='btn'>Hire Me</button>
