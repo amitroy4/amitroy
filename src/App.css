@@ -196,12 +196,12 @@ ol {
 .about .container .about_img {
   width: 40%;
   display: flex;
-  text-align: center;
   align-items: center;
+  justify-content: center;
 }
 
 .about .container .about_img .amitroy2 {
-  width: 80%;
+  width: 60%;
   border-radius: 50%;
 }
 
