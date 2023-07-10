@@ -234,13 +234,13 @@ ol {
   margin-bottom: 40px;
 }
 
-.about .container .about_text .icons {
+.icons {
   margin-top: 10px;
   display: flex;
   gap: 20px;
 }
 
-.about .container .about_text .icons a {
+.icons a {
   display: flex;
   height: 40px;
   width: 40px;
@@ -252,37 +252,37 @@ ol {
   transition: all linear 0.4s;
 }
 
-.about .container .about_text .icons a:hover {
+.icons a:hover {
   border: 1px solid white;
   background: white;
 }
 
-.about .container .about_text .icons a .icon {
+.icons a .icon {
   font-size: 30px;
   line-height: 40px;
   margin: 0 auto;
 }
 
-.about .container .about_text .icons a .linkedin {
+.icons a .linkedin {
   color: #0A66C2;
 }
 
-.about .container .about_text .icons a .github {
+.icons a .github {
   border: 0.1px solid rgba(255, 255, 255, 0.582);
   border-radius: 50%;
   color: black;
   background: rgba(255, 255, 255, 0.639);
 }
 
-.about .container .about_text .icons a .facebook {
+.icons a .facebook {
   color: #0A66C2;
 }
 
-.about .container .about_text .icons a .instagram {
+.icons a .instagram {
   color: #f57441be;
 }
 
-.about .container .about_text .icons a .message {
+.icons a .message {
   color: #0A66C2;
 }
 
@@ -291,3 +291,92 @@ ol {
 /* ---------------------------Navbar CSS End--------------------------- */
 /* ---------------------------Navbar CSS Start--------------------------- */
 /* ---------------------------Navbar CSS End--------------------------- */
+/* ---------------------------Footer CSS Start--------------------------- */
+.footer {
+  background: #282828;
+}
+
+.footer .container {
+  display: flex;
+  padding: 100px 0;
+}
+
+.footer .container .info {
+  width: 40%;
+}
+
+.footer .container .info .item,
+a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  gap: 20px;
+  color: #cccccc;
+  margin: 10px 0;
+  align-items: center;
+  transition: all linear 0.4s;
+}
+
+
+.footer .container .info .item:hover,
+a:hover {
+  color: #d6c6b2;
+  cursor: pointer;
+}
+
+.footer .container .msg {
+  width: 60%;
+  background: #333333;
+  border-radius: 5px;
+  padding: 20px 40px;
+}
+
+.footer .container .msg input {
+  width: 400px;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+
+.footer .container .msg input:last-child {
+  height: 100px;
+}
+
+.footer .container .msg button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  width: 80px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.footer .container .msg button:hover {
+  background: #d3bc9f;
+}
+
+
+.footer h6 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footer .follow_me {
+  margin-top: 30px;
+}
+
+.footer .copyright {
+  padding: 10px 0;
+  text-align: center;
+  background: #333333;
+  color: #c2c2c2;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ---------------------------Footer CSS End--------------------------- */

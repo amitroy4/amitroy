@@ -2,8 +2,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import amitroy2 from '/images/amitroy2.jpg'
-import { AiFillLinkedin, AiFillGithub, AiFillMessage, AiFillInstagram } from "react-icons/ai";
-import { BsFacebook } from "react-icons/bs";
+import { AiFillLinkedin, AiFillGithub, AiFillMessage, AiFillInstagram, AiOutlineMail } from "react-icons/ai";
+import { BsFacebook, BsFillPinMapFill, BsFillTelephoneFill } from "react-icons/bs";
 import { TypeAnimation } from 'react-type-animation';
 
 
@@ -82,6 +82,49 @@ function App() {
       {/* ------------------------ Banner End ------------------------ */}
       {/* ------------------------ Navbar Start ------------------------ */}
       {/* ------------------------ Navbar End ------------------------ */}
+      {/* ------------------------ Footer Start ------------------------ */}
+
+      <section className='footer'>
+        <div className="container">
+          <div className="info">
+            <h6>Get in Touch</h6>
+            <div className="item">
+              <BsFillPinMapFill className='icon' />
+              <p>15/A1, Gopibagh 2nd Lane, Dhaka - 1000</p>
+            </div>
+            <div className="item">
+              <AiOutlineMail className='icon' />
+              <a href="mailto: amitroy98.ewu@gmail.com">amitroy98.ewu@gmail.com</a>
+            </div>
+            <div className="item">
+              <BsFillTelephoneFill className='icon' />
+              <p>+88 01521428527</p>
+            </div>
+            <h6 className='follow_me'>Follow Me</h6>
+            <div className="icons">
+              <a href="https://www.linkedin.com/in/amitroy98" target='_blank'><AiFillLinkedin className='linkedin icon' /></a>
+              <a href="https://github.com/amitroy4" target='_blank'><AiFillGithub className='github icon' /></a>
+              <a href="https://www.facebook.com/amitroy.ewu" target='_blank'><BsFacebook className='facebook icon' /></a>
+              <a href="https://www.instagram.com/amit_roy8449" target='_blank'><AiFillInstagram className='instagram icon' /></a>
+              <a href="#" target='_blank'><AiFillMessage className='message icon' /></a>
+            </div>
+
+          </div>
+          <div className="msg">
+            <h6>Message Me</h6>
+            <form>
+              <input type="text" placeholder='Your Name'/>
+              <input type="email" placeholder='Your Email'/>
+              <input type="text" placeholder='Message...'/>
+            </form>
+            <button>Submit</button>
+          </div>
+        </div>
+        <div className="copyright">
+          <p>Copyright 2023. All rights reserved by Amit Roy</p>
+        </div>
+      </section>
+      {/* ------------------------ Footer End ------------------------ */}
     </>
   )
 }
