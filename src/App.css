@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+
+
+/* ---------------------------Navbar CSS Start--------------------------- */
+.navbar {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: fixed;
+  width: 100%;
+  background: #000;
+}
+
+.navbar .box {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+}
+
+.navbar .box .logo {
+  text-transform: uppercase;
+}
+
+.navbar .box ul {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.navbar .box ul li a {
+  color: rgb(198, 198, 198);
+  padding: 5px;
+  transition: all linear 0.4s;
+  position: relative;
+}
+
+.navbar .box ul li a:hover {
+  color: white;
+}
+
+.navbar .box ul li a:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background: white;
+  transition: all linear 0.4s;
+}
+
+.navbar .box ul li a:hover:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: white;
+}
+
+.navbar .box ul li:hover {
+  cursor: pointer;
+}
+
+.navbar .box ul .btn {
+  padding: 5px 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  transition: all linear 0.4s;
+}
+
+.navbar .box ul .btn:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* ---------------------------Navbar CSS End--------------------------- */
+/* ---------------------------Banner CSS Start--------------------------- */
+
+.banner {
+  background: black;
+  width: 100%;
+}
+
+.banner .container {
+  display: flex;
+}
+
+.banner .banner_img {
+  width: 100%;
+  background-image: url('/public/images/amit.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner .banner_img .banner_title {
+  margin-left: auto;
+  margin-right: 170px;
+  text-align: end;
+  padding-top: 150px;
+  padding-bottom: 75px;
+  color: white;
+}
+
+.banner .banner_img .banner_title h2 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.banner .banner_img .banner_title h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 120px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 120px;
+  margin-top: 30px;
+}
+
+.banner .banner_img .banner_title h3 {
+  background: #ffffff8e;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 12px;
+  font-weight: 600;
+  color: #323232;
+  width: 500px;
+  padding: 5px 0;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing:3px;
+}
+
+.banner .banner_img .banner_title .btn {
+  padding: 5px;
+  width: 150px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  transition: all linear 0.4s;
+  margin-left: 30px;
+  text-transform: uppercase;
+}
+
+.banner .banner_img .banner_title .btn:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* ---------------------------Banner CSS End--------------------------- */
+/* ---------------------------About Me CSS Start--------------------------- */
+
+.about {
+  height: 2000px;
+}
+
+/* ---------------------------About Me CSS End--------------------------- */
+/* ---------------------------Navbar CSS Start--------------------------- */
+/* ---------------------------Navbar CSS End--------------------------- */
+/* ---------------------------Navbar CSS Start--------------------------- */
+/* ---------------------------Navbar CSS End--------------------------- */
