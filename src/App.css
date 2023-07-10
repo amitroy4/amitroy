@@ -125,14 +125,14 @@ ol {
   margin-left: auto;
   margin-right: 170px;
   text-align: end;
-  padding-top: 150px;
-  padding-bottom: 75px;
+  padding-top: 200px;
+  padding-bottom: 120px;
   color: white;
 }
 
 .banner .banner_img .banner_title h2 {
   font-family: 'Abril Fatface', cursive;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
   letter-spacing: 2px;
 }
@@ -144,6 +144,7 @@ ol {
   text-transform: uppercase;
   line-height: 120px;
   margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .banner .banner_img .banner_title h3 {
@@ -156,8 +157,8 @@ ol {
   padding: 5px 0;
   margin-left: auto;
   text-align: center;
-  margin-bottom: 30px;
-  letter-spacing:3px;
+  margin-bottom: 40px;
+  letter-spacing: 3px;
 }
 
 .banner .banner_img .banner_title .btn {
@@ -185,7 +186,43 @@ ol {
 /* ---------------------------About Me CSS Start--------------------------- */
 
 .about {
-  height: 2000px;
+  background: #282828;
+}
+
+.about .container {
+  display: flex;
+}
+
+.about .container .about_img {
+  width: 40%;
+}
+
+.about .container .about_text {
+  width: 60%;
+  padding: 150px 0;
+}
+
+.about .container .about_text h5 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 32px;
+  font-weight: 400;
+  color: #d6c6b2;
+}
+
+.about .container .about_text .para {
+  margin: 40px 0;
+}
+
+.about .container .about_text .para p {
+  width: 670px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: justify;
+}
+.about .container .about_text .para p:first-child{
+  margin-bottom: 40px;
 }
 
 /* ---------------------------About Me CSS End--------------------------- */
