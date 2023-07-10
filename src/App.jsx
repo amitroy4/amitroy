@@ -1,6 +1,9 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import amitroy2 from '/images/amitroy2.jpg'
+import { AiFillLinkedin, AiFillGithub, AiFillMessage, AiFillInstagram } from "react-icons/ai";
+import { BsFacebook } from "react-icons/bs";
 
 
 function App() {
@@ -49,7 +52,9 @@ function App() {
 
       <section className='about'>
         <div className="container">
-          <div className="about_img">scv</div>
+          <div className="about_img">
+            <img className='amitroy2' src={amitroy2} alt="amitroy2" />
+          </div>
           <div className="about_text">
             <h5>About Me</h5>
             <div className="para">
@@ -57,6 +62,13 @@ function App() {
               <p>I’m now preparing myself for MERN full-stack web development. My future goal is to make web applications more powerful with strong security.</p>
             </div>
             <h5>Hire Me</h5>
+            <div className="icons">
+              <a href="https://www.linkedin.com/in/amitroy98" target='_blank'><AiFillLinkedin className='linkedin icon' /></a>
+              <a href="https://github.com/amitroy4" target='_blank'><AiFillGithub className='github icon' /></a>
+              <a href="https://www.facebook.com/amitroy.ewu" target='_blank'><BsFacebook className='facebook icon' /></a>
+              <a href="https://www.instagram.com/amit_roy8449" target='_blank'><AiFillInstagram className='instagram icon' /></a>
+              <a href="#" target='_blank'><AiFillMessage className='message icon' /></a>
+            </div>
           </div>
         </div>
       </section>

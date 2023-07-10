@@ -195,11 +195,19 @@ ol {
 
 .about .container .about_img {
   width: 40%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.about .container .about_img .amitroy2 {
+  width: 80%;
+  border-radius: 50%;
 }
 
 .about .container .about_text {
   width: 60%;
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 .about .container .about_text h5 {
@@ -221,8 +229,61 @@ ol {
   color: #ffffff;
   text-align: justify;
 }
-.about .container .about_text .para p:first-child{
+
+.about .container .about_text .para p:first-child {
   margin-bottom: 40px;
+}
+
+.about .container .about_text .icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.about .container .about_text .icons a {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+  transition: all linear 0.4s;
+}
+
+.about .container .about_text .icons a:hover {
+  border: 1px solid white;
+  background: white;
+}
+
+.about .container .about_text .icons a .icon {
+  font-size: 30px;
+  line-height: 40px;
+  margin: 0 auto;
+}
+
+.about .container .about_text .icons a .linkedin {
+  color: #0A66C2;
+}
+
+.about .container .about_text .icons a .github {
+  border: 0.1px solid rgba(255, 255, 255, 0.582);
+  border-radius: 50%;
+  color: black;
+  background: rgba(255, 255, 255, 0.639);
+}
+
+.about .container .about_text .icons a .facebook {
+  color: #0A66C2;
+}
+
+.about .container .about_text .icons a .instagram {
+  color: #f57441be;
+}
+
+.about .container .about_text .icons a .message {
+  color: #0A66C2;
 }
 
 /* ---------------------------About Me CSS End--------------------------- */
