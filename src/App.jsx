@@ -9,7 +9,7 @@ import { TypeAnimation } from 'react-type-animation';
 import firebaseConfig from '../firebaseconfig';
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 
 
@@ -25,6 +25,18 @@ function App() {
   let [submitMsg, setSubmitMsg] = useState("")
   let [toggle, setToggle] = useState("mobile_menu")
   let [toggleCondition, setToggleCondition] = useState(true)
+
+
+  const targetRefs = {
+    targetHome: useRef(null),
+    targetAbout: useRef(null),
+    targetFooter: useRef(null),
+  };
+
+  const handleClick = (targetRef) => {
+    targetRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
 
   let handleToggle = () => {
     if (toggle == "mobile_menu") {
@@ -96,10 +108,10 @@ function App() {
               }
               <div className='menu'>
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Portfolio</a></li>
-                  <li><a href="#">Home</a></li>
+                  <li><a><button onClick={() => handleClick(targetRefs.targetHome)}>Home</button></a></li>
+                  <li><a><button onClick={() => handleClick(targetRefs.targetAbout)}>About</button></a></li>
+                  <li><a><button>Portfolio</button></a></li>
+                  <li><a><button>Home</button></a></li>
                   <a href={resumeAmit}><button className='btn'>Download CV</button></a>
                 </ul>
               </div>
@@ -107,10 +119,10 @@ function App() {
           </div>
           <div className={toggle}>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Home</a></li>
+              <li><a><button onClick={() => handleClick(targetRefs.targetHome)}>Home</button></a></li>
+              <li><a><button onClick={() => handleClick(targetRefs.targetAbout)}>About</button></a></li>
+              <li><a><button>Portfolio</button></a></li>
+              <li><a><button>Home</button></a></li>
               <a href={resumeAmit}><button className='btn'>Download CV</button></a>
             </ul>
           </div>
@@ -120,7 +132,7 @@ function App() {
 
       {/* ------------------------ Banner Start ------------------------ */}
 
-      <section className='banner'>
+      <section ref={targetRefs.targetHome} className='banner'>
         <div className="container">
           <div className="banner_img">
             <div className="banner_title">
@@ -129,7 +141,7 @@ function App() {
               /></h2>
               <h1>Amit Roy</h1>
               <h3>React.js || MongoDB || Express.js || Node.js || React Native</h3>
-              <button className='btn'>Explore Me</button><button className='btn'>Hire Me</button>
+              <button className='btn'>Explore Me</button><button onClick={() => handleClick(targetRefs.targetFooter)} className='btn'>Hire Me</button>
             </div>
           </div>
         </div>
@@ -138,7 +150,7 @@ function App() {
       {/* ------------------------ Banner End ------------------------ */}
       {/* ------------------------ About Me Start ------------------------ */}
 
-      <section className='about'>
+      <section ref={targetRefs.targetAbout} className='about'>
         <div className="container">
           <div className="about_img">
             <img className='amitroy2' src={amitroy2} alt="amitroy2" />
@@ -167,7 +179,7 @@ function App() {
       {/* ------------------------ Navbar End ------------------------ */}
       {/* ------------------------ Footer Start ------------------------ */}
 
-      <section className='footer'>
+      <section ref={targetRefs.targetFooter} className='footer'>
         <div className="container">
           <div className="info">
             <h6>Get in Touch</h6>
