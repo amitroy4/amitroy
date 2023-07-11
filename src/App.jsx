@@ -1,5 +1,3 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import amitroy2 from '/images/amitroy2.jpg'
 import { AiFillLinkedin, AiFillGithub, AiFillMessage, AiFillInstagram, AiOutlineMail } from "react-icons/ai";
@@ -8,7 +6,6 @@ import { TypeAnimation } from 'react-type-animation';
 import firebaseConfig from '../firebaseconfig';
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
-
 import { useEffect, useState } from 'react';
 
 
@@ -35,7 +32,7 @@ function App() {
       setName("");
       setEmail("");
       setMessage(""),
-      setSubmitMsg("Message Sent.")
+        setSubmitMsg("Message Sent.")
     });
 
   }
