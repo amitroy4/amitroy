@@ -3,6 +3,7 @@ import resumeAmit from '../public/pdf/resume_amit.pdf'
 import amitroy2 from '/images/amitroy2.jpg'
 import { AiFillLinkedin, AiFillGithub, AiFillMessage, AiFillInstagram, AiOutlineMail } from "react-icons/ai";
 import { BsFacebook, BsFillPinMapFill, BsFillTelephoneFill } from "react-icons/bs";
+import { VscThreeBars } from "react-icons/vsc";
 import { TypeAnimation } from 'react-type-animation';
 import firebaseConfig from '../firebaseconfig';
 import { getFirestore, collection, addDoc } from "firebase/firestore";
@@ -62,6 +63,9 @@ function App() {
           <div className="box">
             <div className="logo">
               Amit Roy
+            </div>
+            <div className="toggle">
+            <VscThreeBars/>
             </div>
             <div className="menu">
               <ul>

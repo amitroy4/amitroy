@@ -29,6 +29,7 @@ ol {
   position: fixed;
   width: 100%;
   background: #000;
+  z-index: 1;
 }
 
 .navbar .box {
@@ -102,12 +103,23 @@ ol {
   cursor: pointer;
 }
 
+.navbar .toggle {
+  background: rgba(255, 255, 255, 0.205);
+  font-size: 30px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0 6px;
+  display: none;
+  text-align: center;
+}
+
+
 /* ---------------------------Navbar CSS End--------------------------- */
 /* ---------------------------Banner CSS Start--------------------------- */
 
 .banner {
   background: black;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .banner .container {
@@ -153,7 +165,7 @@ ol {
   font-size: 12px;
   font-weight: 600;
   color: #323232;
-  width: 500px;
+  width: 45%;
   padding: 5px 0;
   margin-left: auto;
   text-align: center;
@@ -222,7 +234,7 @@ ol {
 }
 
 .about .container .about_text .para p {
-  width: 670px;
+  width: 80%;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -326,21 +338,21 @@ a:hover {
 }
 
 .footer .container .msg {
-  width: 60%;
+  width: 40%;
   background: #333333;
   border-radius: 5px;
   padding: 20px 40px;
 }
 
 .footer .container .msg input {
-  width: 400px;
+  width: 100%;
   margin: 5px 0;
   padding: 5px;
 }
 
 
 .footer .container .msg textarea {
-  width: 400px;
+  width: 100%;
   height: 100px;
   margin: 5px 0;
   padding: 5px;
@@ -398,3 +410,43 @@ a:hover {
 }
 
 /* ---------------------------Footer CSS End--------------------------- */
+
+
+
+/* Responsive code */
+@media screen and (max-width: 800px) {
+  .navbar .toggle {
+    display: flex;
+  }
+
+  .navbar .box ul {
+    display: none;
+    opacity: 0;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .footer .container {
+    display: block !important;
+  }
+
+  .footer .container .msg {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .footer .container .msg input {
+    width: 80%;
+  }
+
+  .footer .container .msg textarea {
+    width: 80%;
+  }
+
+  .footer .container .info {
+    width: 100%;
+    padding-left: 20px;
+  }
+}
