@@ -413,7 +413,7 @@ a:hover {
 
 
 
-/* Responsive code */
+/* Responsive code for Tab */
 @media screen and (max-width: 800px) {
   .navbar .toggle {
     display: flex;
@@ -448,5 +448,19 @@ a:hover {
   .footer .container .info {
     width: 100%;
     padding-left: 20px;
+  }
+}
+
+
+
+/* Responsive code for Mobile */
+@media screen and (max-width: 400px) {
+  .about .container .about_img {
+    display: none;
+  }
+
+  .about .container .about_text{
+    padding-left: 20px;
+    width: 100%;
   }
 }
