@@ -14,6 +14,7 @@ import { useEffect, useState } from 'react';
 function App() {
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
+  var emailValidRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 
   let [name, setName] = useState("")
@@ -22,6 +23,24 @@ function App() {
   let [submitMsg, setSubmitMsg] = useState("")
 
   let handleSubmit = () => {
+    if (name == "") {
+      setSubmitMsg("Name field is empty.")
+      return
+    }
+    if (email == "") {
+      setSubmitMsg("Email field is empty.")
+      return
+    }
+    if (message == "") {
+      setSubmitMsg("Message field is empty.")
+      return
+    }
+
+    if (!email.match(emailValidRegex)) {
+      setSubmitMsg("Email is not valid.")
+      return
+    }
+
     addDoc(collection(db, "messages"), {
       sendername: name,
       senderemail: email,
@@ -141,14 +160,17 @@ function App() {
               <textarea onChange={(e) => setMessage(e.target.value)} type="text" placeholder='Message...' value={message} />
             </form>
             <div className='submit_part'>
-              <button onClick={handleSubmit}>Submit</button><p>{submitMsg}</p>
+              <button onClick={handleSubmit}>Submit</button>{submitMsg.includes("is")
+                ? <p style={{ color: "#fb6944" }} >{submitMsg}</p>
+                : <p>{submitMsg}</p>
+              }
             </div>
           </div>
         </div>
         <div className="copyright">
           <p>Copyright 2023. All rights reserved by Amit Roy</p>
         </div>
-      </section>
+      </section >
       {/* ------------------------ Footer End ------------------------ */}
     </>
   )

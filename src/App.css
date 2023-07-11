@@ -359,6 +359,7 @@ a:hover {
   width: 80px;
   padding: 5px;
   border-radius: 5px;
+  transition: all linear 0.4s;
 }
 
 .footer .container .msg .submit_part p {
@@ -370,6 +371,7 @@ a:hover {
 
 .footer .container .msg button:hover {
   background: #d3bc9f;
+  cursor: pointer;
 }
 
 
