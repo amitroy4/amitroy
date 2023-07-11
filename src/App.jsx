@@ -34,6 +34,8 @@ function App() {
   };
 
   const handleClick = (targetRef) => {
+    setToggleCondition(true)
+    setToggle("mobile_menu")
     targetRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 

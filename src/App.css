@@ -433,9 +433,6 @@ a:hover {
 
 /* Responsive code for Tab */
 @media screen and (max-width: 800px) {
-  /* .navbar {
-    position: inherit;
-  } */
 
   .navbar .toggle {
     display: flex;
