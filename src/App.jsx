@@ -22,7 +22,7 @@ function App() {
   let [email, setEmail] = useState("")
   let [message, setMessage] = useState("")
   let [submitMsg, setSubmitMsg] = useState("")
-  let [toggle, setToggle] = useState("menu")
+  let [toggle, setToggle] = useState("visbletoggle")
 
   let handleToggle = () => {
     if (toggle == "menu") {
