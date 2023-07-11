@@ -453,6 +453,10 @@ a:hover {
     display: block;
   }
 
+  .footer .container {
+    display: block;
+  }
+
   .footer .container .msg {
     margin-top: 50px;
     width: 100%;
