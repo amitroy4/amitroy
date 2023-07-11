@@ -169,7 +169,7 @@ function App() {
               <a href="https://github.com/amitroy4" target='_blank'><AiFillGithub className='github icon' /></a>
               <a href="https://www.facebook.com/amitroy.ewu" target='_blank'><BsFacebook className='facebook icon' /></a>
               <a href="https://www.instagram.com/amit_roy8449" target='_blank'><AiFillInstagram className='instagram icon' /></a>
-              <a href="#" target='_blank'><AiFillMessage className='message icon' /></a>
+              <a href="https://wa.me/1521428527" target='_blank'><AiFillMessage className='message icon' /></a>
             </div>
           </div>
         </div>
@@ -203,7 +203,7 @@ function App() {
               <a href="https://github.com/amitroy4" target='_blank'><AiFillGithub className='github icon' /></a>
               <a href="https://www.facebook.com/amitroy.ewu" target='_blank'><BsFacebook className='facebook icon' /></a>
               <a href="https://www.instagram.com/amit_roy8449" target='_blank'><AiFillInstagram className='instagram icon' /></a>
-              <a href="#" target='_blank'><AiFillMessage className='message icon' /></a>
+              <a href="https://wa.me/1521428527" target='_blank'><AiFillMessage className='message icon' /></a>
             </div>
 
           </div>
