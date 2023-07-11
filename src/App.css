@@ -35,7 +35,7 @@ ol {
 .navbar .box {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 10px;
   align-items: center;
 }
 
@@ -104,17 +104,10 @@ ol {
 }
 
 .navbar .toggle {
-  background: rgba(255, 255, 255, 0.205);
   font-size: 30px;
-  border: 1px solid white;
   border-radius: 5px;
-  padding: 0 6px;
   display: none;
   text-align: center;
-}
-
-.navbar .toggle:hover {
-  color: #d6c6b2;
 }
 
 .navbar .mobile_menu {
@@ -122,7 +115,9 @@ ol {
 }
 
 .navbar .visbletoggle {
+  width: 100%;
   display: none;
+  padding: 0 20px;
 }
 
 /* ---------------------------Navbar CSS End--------------------------- */
@@ -433,7 +428,7 @@ a:hover {
 
   .visbletoggle {
     display: block;
-    background: red;
+    background: black;
   }
 
   .visbletoggle ul {
