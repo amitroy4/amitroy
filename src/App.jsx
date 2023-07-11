@@ -143,7 +143,7 @@ function App() {
             <form>
               <input onChange={(e) => setName(e.target.value)} type="text" placeholder='Your Name' value={name} />
               <input onChange={(e) => setEmail(e.target.value)} type="email" placeholder='Your Email' value={email} />
-              <input onChange={(e) => setMessage(e.target.value)} type="text" placeholder='Message...' value={message} />
+              <textarea onChange={(e) => setMessage(e.target.value)} type="text" placeholder='Message...' value={message} />
             </form>
             <div className='submit_part'>
               <button onClick={handleSubmit}>Submit</button><p>{submitMsg}</p>

@@ -339,10 +339,14 @@ a:hover {
 }
 
 
-.footer .container .msg input:last-child {
+.footer .container .msg textarea {
+  width: 400px;
   height: 100px;
+  margin: 5px 0;
+  padding: 5px;
 }
-.footer .container .msg .submit_part{
+
+.footer .container .msg .submit_part {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -357,7 +361,7 @@ a:hover {
   border-radius: 5px;
 }
 
-.footer .container .msg .submit_part p{
+.footer .container .msg .submit_part p {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 600;
