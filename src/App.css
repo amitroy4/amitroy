@@ -43,24 +43,24 @@ ol {
   font-family: 'Pacifico', cursive;
 }
 
-.navbar .box ul {
+.navbar ul {
   display: flex;
   column-gap: 30px;
   align-items: center;
 }
 
-.navbar .box ul li a {
+.navbar ul li a {
   color: rgb(198, 198, 198);
   padding: 5px;
   transition: all linear 0.4s;
   position: relative;
 }
 
-.navbar .box ul li a:hover {
+.navbar ul li a:hover {
   color: white;
 }
 
-.navbar .box ul li a:after {
+.navbar ul li a:after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -71,7 +71,7 @@ ol {
   transition: all linear 0.4s;
 }
 
-.navbar .box ul li a:hover:after {
+.navbar ul li a:hover:after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -81,23 +81,23 @@ ol {
   background: white;
 }
 
-.navbar .box ul li:hover {
+.navbar ul li:hover {
   cursor: pointer;
 }
 
-.navbar .box ul .btn {
+.navbar ul .btn {
   padding: 5px 20px;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: 500;
   border: 1px solid white;
-  border-radius: 5px;
+  border-radius: 50px;
   background: transparent;
   color: white;
   transition: all linear 0.4s;
 }
 
-.navbar .box ul .btn:hover {
+.navbar ul .btn:hover {
   background: white;
   color: black;
   cursor: pointer;
@@ -117,6 +117,9 @@ ol {
   color: #d6c6b2;
 }
 
+.navbar .mobile_menu {
+  display: none;
+}
 
 /* ---------------------------Navbar CSS End--------------------------- */
 /* ---------------------------Banner CSS Start--------------------------- */
@@ -425,30 +428,26 @@ a:hover {
   }
 
   .visbletoggle {
-    display: none;
+    display: block;
+    background: red;
   }
 
-  .navbar .box .bar {
-    position: relative;
+  .visbletoggle ul {
+    display: inline-block;
+    padding: 0 auto;
   }
 
   .navbar .box ul {
-    position: absolute;
-    width: 280px;
-    top: 40px;
-    right: 0;
-    display: inline;
-    background: black;
-    padding: 0 40px;
+    display: none;
   }
 
   .container {
     width: 100%;
   }
 
-  .footer .container {
+  /* .footer .container {
     display: block !important;
-  }
+  } */
 
   .footer .container .msg {
     margin-top: 50px;

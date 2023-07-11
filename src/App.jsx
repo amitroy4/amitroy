@@ -25,11 +25,11 @@ function App() {
   let [toggle, setToggle] = useState("visbletoggle")
 
   let handleToggle = () => {
-    if (toggle == "menu") {
+    if (toggle == "mobile_menu") {
       setToggle("visbletoggle")
     }
     if (toggle == "visbletoggle") {
-      setToggle("menu")
+      setToggle("mobile_menu")
     }
 
   }
@@ -43,13 +43,14 @@ function App() {
       setSubmitMsg("Email field is empty.")
       return
     }
-    if (message == "") {
-      setSubmitMsg("Message field is empty.")
-      return
-    }
 
     if (!email.match(emailValidRegex)) {
       setSubmitMsg("Email is not valid.")
+      return
+    }
+
+    if (message == "") {
+      setSubmitMsg("Message field is empty.")
       return
     }
 
@@ -77,7 +78,7 @@ function App() {
             </div >
             <div className='bar'>
               <VscThreeBars className="toggle" onClick={handleToggle} />
-              <div className={toggle}>
+              <div className='menu'>
                 <ul>
                   <li><a href="#">Home</a></li>
                   <li><a href="#">About</a></li>
@@ -87,7 +88,15 @@ function App() {
                 </ul>
               </div>
             </div>
-
+          </div>
+          <div className={toggle}>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Home</a></li>
+              <a href={resumeAmit}><button className='btn'>Download CV</button></a>
+            </ul>
           </div>
         </div>
       </section>
