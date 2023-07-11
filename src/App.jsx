@@ -10,9 +10,6 @@ import { useEffect, useState } from 'react';
 
 
 
-
-
-
 function App() {
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
