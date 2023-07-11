@@ -318,6 +318,7 @@ ol {
 }
 
 .footer .container .info {
+  padding-left: 20px;
   width: 40%;
 }
 
@@ -464,7 +465,6 @@ a:hover {
 
   .footer .container .info {
     width: 100%;
-    padding-left: 20px;
   }
 }
 
