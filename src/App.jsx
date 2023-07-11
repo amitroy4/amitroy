@@ -1,4 +1,5 @@
 import './App.css'
+import resumeAmit from '../public/pdf/resume_amit.pdf'
 import amitroy2 from '/images/amitroy2.jpg'
 import { AiFillLinkedin, AiFillGithub, AiFillMessage, AiFillInstagram, AiOutlineMail } from "react-icons/ai";
 import { BsFacebook, BsFillPinMapFill, BsFillTelephoneFill } from "react-icons/bs";
@@ -49,7 +50,7 @@ function App() {
                 <li><a href="#">About</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Home</a></li>
-                <button className='btn'>Download CV</button>
+                <a href={resumeAmit}><button className='btn'>Download CV</button></a>
               </ul>
             </div>
           </div>

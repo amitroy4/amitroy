@@ -39,7 +39,7 @@ ol {
 }
 
 .navbar .box .logo {
-  text-transform: uppercase;
+  font-family: 'Pacifico', cursive;
 }
 
 .navbar .box ul {
