@@ -5,12 +5,40 @@ import amitroy2 from '/images/amitroy2.jpg'
 import { AiFillLinkedin, AiFillGithub, AiFillMessage, AiFillInstagram, AiOutlineMail } from "react-icons/ai";
 import { BsFacebook, BsFillPinMapFill, BsFillTelephoneFill } from "react-icons/bs";
 import { TypeAnimation } from 'react-type-animation';
+import firebaseConfig from '../firebaseconfig';
+import { getFirestore, collection, addDoc } from "firebase/firestore";
+import { initializeApp } from "firebase/app";
+
+import { useEffect, useState } from 'react';
+
 
 
 
 
 
 function App() {
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+
+  let [name, setName] = useState("")
+  let [email, setEmail] = useState("")
+  let [message, setMessage] = useState("")
+  let [submitMsg, setSubmitMsg] = useState("")
+
+  let handleSubmit = () => {
+    addDoc(collection(db, "messages"), {
+      sendername: name,
+      senderemail: email,
+      sendermassege: message,
+    }).then(() => {
+      setName("");
+      setEmail("");
+      setMessage(""),
+      setSubmitMsg("Message Sent.")
+    });
+
+  }
 
   return (
     <>
@@ -113,11 +141,13 @@ function App() {
           <div className="msg">
             <h6>Message Me</h6>
             <form>
-              <input type="text" placeholder='Your Name'/>
-              <input type="email" placeholder='Your Email'/>
-              <input type="text" placeholder='Message...'/>
+              <input onChange={(e) => setName(e.target.value)} type="text" placeholder='Your Name' value={name} />
+              <input onChange={(e) => setEmail(e.target.value)} type="email" placeholder='Your Email' value={email} />
+              <input onChange={(e) => setMessage(e.target.value)} type="text" placeholder='Message...' value={message} />
             </form>
-            <button>Submit</button>
+            <div className='submit_part'>
+              <button onClick={handleSubmit}>Submit</button><p>{submitMsg}</p>
+            </div>
           </div>
         </div>
         <div className="copyright">

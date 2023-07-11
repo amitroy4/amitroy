@@ -342,6 +342,11 @@ a:hover {
 .footer .container .msg input:last-child {
   height: 100px;
 }
+.footer .container .msg .submit_part{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
 .footer .container .msg button {
   font-family: 'Open Sans', sans-serif;
@@ -350,6 +355,13 @@ a:hover {
   width: 80px;
   padding: 5px;
   border-radius: 5px;
+}
+
+.footer .container .msg .submit_part p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(0, 115, 255);
 }
 
 .footer .container .msg button:hover {
