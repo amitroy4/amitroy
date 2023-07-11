@@ -23,7 +23,7 @@ function App() {
   let [email, setEmail] = useState("")
   let [message, setMessage] = useState("")
   let [submitMsg, setSubmitMsg] = useState("")
-  let [toggle, setToggle] = useState("visbletoggle")
+  let [toggle, setToggle] = useState("mobile_menu")
   let [toggleCondition, setToggleCondition] = useState(true)
 
   let handleToggle = () => {
@@ -90,9 +90,9 @@ function App() {
               {
                 toggleCondition
                   ?
-                  <RxCross1 className="toggle" onClick={handleToggle} />
-                  :
                   <VscThreeBars className="toggle" onClick={handleToggle} />
+                  :
+                  <RxCross1 className="toggle" onClick={handleToggle} />
               }
               <div className='menu'>
                 <ul>
