@@ -22,6 +22,17 @@ function App() {
   let [email, setEmail] = useState("")
   let [message, setMessage] = useState("")
   let [submitMsg, setSubmitMsg] = useState("")
+  let [toggle, setToggle] = useState("menu")
+
+  let handleToggle = () => {
+    if (toggle == "menu") {
+      setToggle("visbletoggle")
+    }
+    if (toggle == "visbletoggle") {
+      setToggle("menu")
+    }
+
+  }
 
   let handleSubmit = () => {
     if (name == "") {
@@ -63,19 +74,20 @@ function App() {
           <div className="box">
             <div className="logo">
               Amit Roy
+            </div >
+            <div className='bar'>
+              <VscThreeBars className="toggle" onClick={handleToggle} />
+              <div className={toggle}>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Home</a></li>
+                  <a href={resumeAmit}><button className='btn'>Download CV</button></a>
+                </ul>
+              </div>
             </div>
-            <div className="toggle">
-            <VscThreeBars/>
-            </div>
-            <div className="menu">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Home</a></li>
-                <a href={resumeAmit}><button className='btn'>Download CV</button></a>
-              </ul>
-            </div>
+
           </div>
         </div>
       </section>

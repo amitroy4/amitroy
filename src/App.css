@@ -113,6 +113,10 @@ ol {
   text-align: center;
 }
 
+.navbar .toggle:hover {
+  color: #d6c6b2;
+}
+
 
 /* ---------------------------Navbar CSS End--------------------------- */
 /* ---------------------------Banner CSS Start--------------------------- */
@@ -419,9 +423,22 @@ a:hover {
     display: flex;
   }
 
-  .navbar .box ul {
+  .visbletoggle {
     display: none;
-    opacity: 0;
+  }
+
+  .navbar .box .bar {
+    position: relative;
+  }
+
+  .navbar .box ul {
+    position: absolute;
+    width: 280px;
+    top: 40px;
+    right: 0;
+    display: inline;
+    background: black;
+    padding: 0 40px;
   }
 
   .container {
@@ -459,7 +476,7 @@ a:hover {
     display: none;
   }
 
-  .about .container .about_text{
+  .about .container .about_text {
     padding-left: 20px;
     width: 100%;
   }
