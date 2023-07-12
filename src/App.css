@@ -406,12 +406,14 @@ ol {
 /* ------------------------ Education End ------------------------ */
 /* ------------------------ Project Start ------------------------ */
 .project {
+  height: 200px;
   background: green;
 }
 
 /* ------------------------ Project End ------------------------ */
 /* ------------------------ Activity Start ------------------------ */
 .activity {
+  height: 200px;
   background: yellow;
 }
 

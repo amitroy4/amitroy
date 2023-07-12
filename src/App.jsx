@@ -44,6 +44,8 @@ function App() {
     targetHome: useRef(null),
     targetAbout: useRef(null),
     targetEducation: useRef(null),
+    targetProject: useRef(null),
+    targetActivity: useRef(null),
     targetGallery: useRef(null),
     targetFooter: useRef(null),
   };
@@ -134,8 +136,8 @@ function App() {
                   <li><a><button onClick={() => handleClick(targetRefs.targetHome)}>Home</button></a></li>
                   <li><a><button onClick={() => handleClick(targetRefs.targetAbout)}>About</button></a></li>
                   <li><a><button onClick={() => handleClick(targetRefs.targetEducation)}>Education</button></a></li>
-                  <li><a><button>Project</button></a></li>
-                  <li><a><button>Activity</button></a></li>
+                  <li><a><button onClick={() => handleClick(targetRefs.targetProject)}>Project</button></a></li>
+                  <li><a><button onClick={() => handleClick(targetRefs.targetActivity)}>Activity</button></a></li>
                   <li><a><button onClick={() => handleClick(targetRefs.targetGallery)}>Gallery</button></a></li>
                   <a href={resumeAmit}><button className='btn'>Download CV</button></a>
                 </ul>
@@ -147,8 +149,8 @@ function App() {
               <li><a><button onClick={() => handleClick(targetRefs.targetHome)}>Home</button></a></li>
               <li><a><button onClick={() => handleClick(targetRefs.targetAbout)}>About</button></a></li>
               <li><a><button onClick={() => handleClick(targetRefs.targetEducation)}>Education</button></a></li>
-              <li><a><button>Project</button></a></li>
-              <li><a><button>Activity</button></a></li>
+              <li><a><button onClick={() => handleClick(targetRefs.targetProject)}>Project</button></a></li>
+              <li><a><button onClick={() => handleClick(targetRefs.targetActivity)}>Activity</button></a></li>
               <li><a><button onClick={() => handleClick(targetRefs.targetGallery)}>Gallery</button></a></li>
               <a href={resumeAmit}><button className='btn'>Download CV</button></a>
             </ul>
@@ -244,14 +246,14 @@ function App() {
       </section>
       {/* ------------------------ Education End ------------------------ */}
       {/* ------------------------ Project Start ------------------------ */}
-      <section className='project'>
+      <section ref={targetRefs.targetProject} className='project'>
         <div className="container">
           <p>Project</p>
         </div>
       </section>
       {/* ------------------------ Project End ------------------------ */}
       {/* ------------------------ Activity Start ------------------------ */}
-      <section className='activity'>
+      <section ref={targetRefs.targetActivity} className='activity'>
         <div className="container">
           <p>Activity</p>
         </div>
