@@ -35,6 +35,7 @@ function App() {
     }
     if (isFullSize) {
       setFullImage("")
+      window.location.reload(false);
     }
     setIsFullSize(!isFullSize);
   };
@@ -42,6 +43,7 @@ function App() {
   const targetRefs = {
     targetHome: useRef(null),
     targetAbout: useRef(null),
+    targetGallery: useRef(null),
     targetFooter: useRef(null),
   };
 
@@ -130,8 +132,10 @@ function App() {
                 <ul>
                   <li><a><button onClick={() => handleClick(targetRefs.targetHome)}>Home</button></a></li>
                   <li><a><button onClick={() => handleClick(targetRefs.targetAbout)}>About</button></a></li>
-                  <li><a><button>Portfolio</button></a></li>
-                  <li><a><button>Home</button></a></li>
+                  <li><a><button>Education</button></a></li>
+                  <li><a><button>Project</button></a></li>
+                  <li><a><button>Activity</button></a></li>
+                  <li><a><button onClick={() => handleClick(targetRefs.targetGallery)}>Gallery</button></a></li>
                   <a href={resumeAmit}><button className='btn'>Download CV</button></a>
                 </ul>
               </div>
@@ -141,8 +145,10 @@ function App() {
             <ul>
               <li><a><button onClick={() => handleClick(targetRefs.targetHome)}>Home</button></a></li>
               <li><a><button onClick={() => handleClick(targetRefs.targetAbout)}>About</button></a></li>
-              <li><a><button>Portfolio</button></a></li>
-              <li><a><button>Home</button></a></li>
+              <li><a><button>Education</button></a></li>
+              <li><a><button>Project</button></a></li>
+              <li><a><button>Activity</button></a></li>
+              <li><a><button onClick={() => handleClick(targetRefs.targetGallery)}>Gallery</button></a></li>
               <a href={resumeAmit}><button className='btn'>Download CV</button></a>
             </ul>
           </div>
@@ -200,7 +206,7 @@ function App() {
       {/* <!-- =================================================
                     Mixitup Part Start
     ================================================= --> */}
-      <div className="mixitup">
+      <div ref={targetRefs.targetGallery} className="mixitup">
         <div className="container">
           <div className="gallerybox">
             <h5>Gallery</h5>
