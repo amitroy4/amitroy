@@ -518,6 +518,46 @@ a:hover {
 
 /* Responsive code for Tab */
 @media screen and (max-width: 800px) {
+  .banner .banner_img .banner_title {
+    margin-left: auto;
+    margin-right: 40px;
+    padding-top: 220px;
+    padding-bottom: 80px;
+    color: white;
+  }
+
+  .banner .banner_img .banner_title h1 {
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-top: 10px;
+  }
+
+  .banner .banner_img .banner_title h2 {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  .banner .banner_img .banner_title h3 {
+    font-size: 10px;
+    font-weight: 400;
+    width: 50%;
+    padding: 4px 0;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+
+  .banner .banner_img .banner_title .btn {
+    width: 100px;
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+
+
+
+
 
   .navbar .toggle {
     display: flex;
@@ -580,6 +620,45 @@ a:hover {
 
 /* Responsive code for Mobile */
 @media screen and (max-width: 400px) {
+
+  .banner .banner_img .banner_title {
+    margin-left: auto;
+    margin-right: 40px;
+    padding-top: 180px;
+    padding-bottom: 60px;
+    color: white;
+  }
+
+  .banner .banner_img .banner_title h1 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-top: 1px;
+  }
+
+  .banner .banner_img .banner_title h2 {
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  .banner .banner_img .banner_title h3 {
+    font-size: 10px;
+    font-weight: 400;
+    width: 80%;
+    padding: 1px 0;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+
+  .banner .banner_img .banner_title .btn {
+    width: 100px;
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+
+
   .about .container .about_img {
     display: none;
   }
