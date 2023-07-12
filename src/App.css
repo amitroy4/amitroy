@@ -577,12 +577,11 @@ a:hover {
 
   .mixitup .main .images {
     gap: 7px;
-    padding: 0 10%;
-    height: 220px;
+    height: 210px;
   }
 
   .mixitup .main .images .mix img {
-    width: 150px;
-    height: 100px;
+    width: 120px;
+    height: 60px;
   }
 }
