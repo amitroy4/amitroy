@@ -595,7 +595,7 @@ a:hover {
   }
 
   .mixitup .main .images {
-    gap: 7px;
+    justify-content: space-around;
     height: 210px;
   }
 
