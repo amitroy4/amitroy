@@ -203,47 +203,65 @@ function App() {
       <div className="mixitup">
         <div className="container">
           <div className="gallerybox">
-          <h5>Gallery</h5>
-          {isFullSize
-            ? <div onClick={() => handleImgClick("")} className="fullimage">
-              <img src={fullImage} alt="" />
-            </div>
-            : <div className="main">
-              <div className="button">
-                <button type="button" data-filter="all">All</button>
-                <button type="button" data-filter=".category-a">Social Work</button>
-                <button type="button" data-filter=".category-b">Tour</button>
-                <button type="button" data-filter=".category-c">Hobby</button>
+            <h5>Gallery</h5>
+            {isFullSize
+              ? <div onClick={() => handleImgClick("")} className="fullimage">
+                <img src={fullImage} alt="" />
               </div>
+              : <div className="main">
+                <div className="button">
+                  <button type="button" data-filter="all">All</button>
+                  <button type="button" data-filter=".category-a">Social Work</button>
+                  <button type="button" data-filter=".category-b">Tour</button>
+                  <button type="button" data-filter=".category-c">Hobby</button>
+                </div>
 
-              <div className="images">
-                <div onClick={() => handleImgClick("/images/gallery/cr1.jpg")} className='mix category-c category-d' data-order="1">
-                  <img src="/images/gallery/cr1.jpg" alt="" />
-                </div>
-                <div onClick={() => handleImgClick("/images/gallery/cr2.jpg")} className='mix category-c category-d' data-order="2">
-                  <img src="/images/gallery/cr2.jpg" alt="" />
-                </div>
-                <div onClick={() => handleImgClick("/images/gallery/cr2.jpg")} className='mix category-c category-d' data-order="2">
-                  <img src="/images/gallery/cr2.jpg" alt="" />
-                </div>
-                <div onClick={() => handleImgClick("/images/gallery/cr2.jpg")} className='mix category-c category-d' data-order="2">
-                  <img src="/images/gallery/cr2.jpg" alt="" />
-                </div>
-                <div onClick={() => handleImgClick("/images/gallery/cr2.jpg")} className='mix category-c category-d' data-order="2">
-                  <img src="/images/gallery/cr2.jpg" alt="" />
-                </div>
-                <div onClick={() => handleImgClick("/images/gallery/cr2.jpg")} className='mix category-c category-d' data-order="2">
-                  <img src="/images/gallery/cr2.jpg" alt="" />
-                </div>
-                <div onClick={() => handleImgClick("/images/gallery/cr2.jpg")} className='mix category-c category-d' data-order="2">
-                  <img src="/images/gallery/cr2.jpg" alt="" />
-                </div>
-                <div onClick={() => handleImgClick("/images/gallery/cr2.jpg")} className='mix category-c category-d' data-order="2">
-                  <img src="/images/gallery/cr2.jpg" alt="" />
+                <div className="images">
+                  <div onClick={() => handleImgClick("/images/gallery/u1.jpg")} className='mix ' data-order="1">
+                    <img src="/images/gallery/u1.jpg" alt="" />
+                  </div>
+                  <div onClick={() => handleImgClick("/images/gallery/u2.jpg")} className='mix ' data-order="3">
+                    <img src="/images/gallery/u2.jpg" alt="" />
+                  </div>
+                  <div onClick={() => handleImgClick("/images/gallery/u3.jpg")} className='mix ' data-order="8">
+                    <img src="/images/gallery/u3.jpg" alt="" />
+                  </div>
+                  <div onClick={() => handleImgClick("/images/gallery/g1.png")} className='mix category-c' data-order="4">
+                    <img src="/images/gallery/g1.png" alt="" />
+                  </div>
+                  <div onClick={() => handleImgClick("/images/gallery/g2.jpg")} className='mix category-c' data-order="6">
+                    <img src="/images/gallery/g2.jpg" alt="" />
+                  </div>
+                  <div onClick={() => handleImgClick("/images/gallery/s2.jpg")} className='mix category-a' data-order="2">
+                    <img src="/images/gallery/s2.jpg" alt="" />
+                  </div>
+                  <div onClick={() => handleImgClick("/images/gallery/s1.jpg")} className='mix category-a' data-order="5">
+                    <img src="/images/gallery/s1.jpg" alt="" />
+                  </div>
+                  <div onClick={() => handleImgClick("/images/gallery/s4.jpg")} className='mix category-a' data-order="7">
+                    <img src="/images/gallery/s4.jpg" alt="" />
+                  </div>
+                  <div onClick={() => handleImgClick("/images/gallery/s7.jpg")} className='mix category-a' data-order="14">
+                    <img src="/images/gallery/s7.jpg" alt="" />
+                  </div>
+                  <div onClick={() => handleImgClick("/images/gallery/t1.jpg")} className='mix category-b' data-order="9">
+                    <img src="/images/gallery/t1.jpg" alt="" />
+                  </div>
+                  <div onClick={() => handleImgClick("/images/gallery/t2.jpg")} className='mix category-b' data-order="13">
+                    <img src="/images/gallery/t2.jpg" alt="" />
+                  </div>
+                  <div onClick={() => handleImgClick("/images/gallery/t3.jpg")} className='mix category-b' data-order="11">
+                    <img src="/images/gallery/t3.jpg" alt="" />
+                  </div>
+                  <div onClick={() => handleImgClick("/images/gallery/t4.jpg")} className='mix category-b' data-order="12">
+                    <img src="/images/gallery/t4.jpg" alt="" />
+                  </div>
+                  <div onClick={() => handleImgClick("/images/gallery/t5.JPG")} className='mix category-b' data-order="10">
+                    <img src="/images/gallery/t5.JPG" alt="" />
+                  </div>
                 </div>
               </div>
-            </div>
-          }
+            }
           </div>
         </div>
       </div>
