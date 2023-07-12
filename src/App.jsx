@@ -10,12 +10,13 @@ import firebaseConfig from '../firebaseconfig';
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
 import { useEffect, useRef, useState } from 'react';
-
-
+import MixItUp from 'mixitup';
 
 function App() {
+
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
+
   var emailValidRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 
@@ -25,7 +26,18 @@ function App() {
   let [submitMsg, setSubmitMsg] = useState("")
   let [toggle, setToggle] = useState("mobile_menu")
   let [toggleCondition, setToggleCondition] = useState(true)
+  const [isFullSize, setIsFullSize] = useState(false);
+  let [fullImage, setFullImage] = useState("")
 
+  const handleImgClick = (e) => {
+    if (!isFullSize) {
+      setFullImage(e)
+    }
+    if (isFullSize) {
+      setFullImage("")
+    }
+    setIsFullSize(!isFullSize);
+  };
 
   const targetRefs = {
     targetHome: useRef(null),
@@ -90,6 +102,12 @@ function App() {
     });
 
   }
+
+
+  useEffect(() => {
+    const container = document.querySelector('.images');
+    MixItUp(container);
+  }, []);
 
   return (
     <>
@@ -177,8 +195,63 @@ function App() {
       {/* ------------------------ About Me End ------------------------ */}
       {/* ------------------------ Banner Start ------------------------ */}
       {/* ------------------------ Banner End ------------------------ */}
-      {/* ------------------------ Navbar Start ------------------------ */}
-      {/* ------------------------ Navbar End ------------------------ */}
+      {/* ------------------------ Gallery Start ------------------------ */}
+
+      {/* <!-- =================================================
+                    Mixitup Part Start
+    ================================================= --> */}
+      <div className="mixitup">
+        <div className="container">
+          {isFullSize
+            ? <div onClick={() => handleImgClick("")} className="fullimage">
+              <img src={fullImage} alt="" />
+            </div>
+            : <div className="main">
+              <div className="button">
+                <button type="button" data-filter="all">All</button>
+                <button type="button" data-filter=".category-a">Nature</button>
+                <button type="button" data-filter=".category-b">River</button>
+                <button type="button" data-filter=".category-c">Road</button>
+                <button type="button" data-filter=".category-d">City</button>
+                <button type="button" data-filter=".category-e">Stairs</button>
+              </div>
+
+              <div className="images">
+                <div onClick={() => handleImgClick("/images/gallery/cr1.jpg")} className='mix category-c category-d' data-order="1">
+                  <img src="/images/gallery/cr1.jpg" alt="" />
+                </div>
+                <div onClick={() => handleImgClick("/images/gallery/cr2.jpg")} className='mix category-c category-d' data-order="2">
+                  <img src="/images/gallery/cr2.jpg" alt="" />
+                </div>
+                <div onClick={() => handleImgClick("/images/gallery/cr2.jpg")} className='mix category-c category-d' data-order="2">
+                  <img src="/images/gallery/cr2.jpg" alt="" />
+                </div>
+                <div onClick={() => handleImgClick("/images/gallery/cr2.jpg")} className='mix category-c category-d' data-order="2">
+                  <img src="/images/gallery/cr2.jpg" alt="" />
+                </div>
+                <div onClick={() => handleImgClick("/images/gallery/cr2.jpg")} className='mix category-c category-d' data-order="2">
+                  <img src="/images/gallery/cr2.jpg" alt="" />
+                </div>
+                <div onClick={() => handleImgClick("/images/gallery/cr2.jpg")} className='mix category-c category-d' data-order="2">
+                  <img src="/images/gallery/cr2.jpg" alt="" />
+                </div>
+                <div onClick={() => handleImgClick("/images/gallery/cr2.jpg")} className='mix category-c category-d' data-order="2">
+                  <img src="/images/gallery/cr2.jpg" alt="" />
+                </div>
+                <div onClick={() => handleImgClick("/images/gallery/cr2.jpg")} className='mix category-c category-d' data-order="2">
+                  <img src="/images/gallery/cr2.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          }
+
+
+        </div>
+      </div>
+      {/* <!-- =================================================
+                    Mixitup Part End
+    ================================================= --> */}
+      {/* ------------------------ Gallery End ------------------------ */}
       {/* ------------------------ Footer Start ------------------------ */}
 
       <section ref={targetRefs.targetFooter} className='footer'>

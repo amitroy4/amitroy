@@ -318,8 +318,78 @@ ol {
 /* ---------------------------About Me CSS End--------------------------- */
 /* ---------------------------Navbar CSS Start--------------------------- */
 /* ---------------------------Navbar CSS End--------------------------- */
-/* ---------------------------Navbar CSS Start--------------------------- */
-/* ---------------------------Navbar CSS End--------------------------- */
+/* ---------------------------Gallery CSS Start--------------------------- */
+
+/* ========================================
+            Mixitup Part CSS Start
+======================================== */
+.mixitup {
+  margin: 50px 0;
+}
+
+.mixitup .container{
+  padding: 0 auto;
+}
+
+.mixitup .main .images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 10%;
+}
+
+.mixitup .main .button {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mixitup .main .button button {
+  width: 100px;
+  padding: 10px 0;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+.mixitup .main .button button:hover {
+  background: rgba(29, 46, 158, 0.8);
+  box-shadow: 0px 0px 30px -11px rgba(29, 46, 158, 1);
+}
+
+.mixitup .main .images {
+  height: 450px;
+  background: red;
+  overflow-y: scroll;
+}
+
+.mixitup .main .images .mix {
+  overflow: hidden;
+}
+
+.mixitup .main .images .mix img {
+  width: 300px;
+  height: 200px;
+}
+
+.mixitup .container {
+  position: relative;
+}
+
+.fullimage {
+  top: 0;
+  left: 0;
+  /* position: absolute; */
+}
+
+.fullimage img {
+  width: 100%;
+  height: 500px;
+}
+
+/* ========================================
+          Mixitup Part CSS End
+======================================== */
+
+/* ---------------------------Gallery CSS End--------------------------- */
 /* ---------------------------Footer CSS Start--------------------------- */
 .footer {
   background: #282828;
