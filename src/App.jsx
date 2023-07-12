@@ -202,6 +202,8 @@ function App() {
     ================================================= --> */}
       <div className="mixitup">
         <div className="container">
+          <div className="gallerybox">
+          <h5>Gallery</h5>
           {isFullSize
             ? <div onClick={() => handleImgClick("")} className="fullimage">
               <img src={fullImage} alt="" />
@@ -209,11 +211,9 @@ function App() {
             : <div className="main">
               <div className="button">
                 <button type="button" data-filter="all">All</button>
-                <button type="button" data-filter=".category-a">Nature</button>
-                <button type="button" data-filter=".category-b">River</button>
-                <button type="button" data-filter=".category-c">Road</button>
-                <button type="button" data-filter=".category-d">City</button>
-                <button type="button" data-filter=".category-e">Stairs</button>
+                <button type="button" data-filter=".category-a">Social Work</button>
+                <button type="button" data-filter=".category-b">Tour</button>
+                <button type="button" data-filter=".category-c">Hobby</button>
               </div>
 
               <div className="images">
@@ -244,8 +244,7 @@ function App() {
               </div>
             </div>
           }
-
-
+          </div>
         </div>
       </div>
       {/* <!-- =================================================

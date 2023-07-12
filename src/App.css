@@ -324,18 +324,26 @@ ol {
             Mixitup Part CSS Start
 ======================================== */
 .mixitup {
-  margin: 50px 0;
+  padding: 50px 0;
+  background: #E4E6E1;
 }
 
 .mixitup .container {
   padding: 0 auto;
 }
 
+.mixitup .container h5 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 32px;
+  font-weight: 400;
+  color: #28282898;
+  margin-bottom: 20px;
+}
+
 .mixitup .main .images {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 0 10%;
 }
 
 .mixitup .main .button {
@@ -344,19 +352,26 @@ ol {
 }
 
 .mixitup .main .button button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
   width: 100px;
   padding: 10px 0;
   margin: 0 10px;
   border-radius: 5px;
+  color: #c1945c;
+  border: 1px solid #D6C6B2;
+  transition: all linear 0.4s;
 }
 
 .mixitup .main .button button:hover {
-  background: rgba(29, 46, 158, 0.8);
-  box-shadow: 0px 0px 30px -11px rgba(29, 46, 158, 1);
+  background: #D6C6B2;
+  color: white;
+  box-shadow: 0px 0px 30px -11px #D6C6B2;
 }
 
 .mixitup .main .images {
-  height: 450px;
+  height: 440px;
   overflow-y: scroll;
 }
 
@@ -554,6 +569,10 @@ a:hover {
   .fullimage img {
     width: 70%;
     height: 400px;
+  }
+
+  .gallerybox {
+    padding: 0 3%;
   }
 }
 
