@@ -356,8 +356,8 @@ ol {
 }
 
 .education .edu_box img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 }
 
@@ -379,18 +379,17 @@ ol {
 }
 
 .education .edu_design .text h4 {
-
-  font-size: 30px;
+  font-size: 20px;
   padding-bottom: 7px;
 }
 
 .education .edu_design .text h6 {
-  font-size: 18px;
+  font-size: 15px;
   padding-bottom: 7px;
 }
 
 .education .edu_design .text h5 {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -649,24 +648,6 @@ a:hover {
     width: 150px;
     font-size: 20px;
     font-weight: 500;
-  }
-
-  /* -----------Education--------- */
-  .education .edu_right {
-    display: block;
-  }
-
-  .education .edu_box {
-    display: block;
-  }
-
-  .education .edu_left {
-    width: 100%;
-  }
-
-  .education .edu_right {
-    margin-top: 60px;
-    width: 100%;
   }
 
 }
