@@ -515,6 +515,47 @@ a:hover {
 /* ---------------------------Footer CSS End--------------------------- */
 
 
+@media screen and (max-width: 1200px) {
+
+  .banner .banner_img .banner_title {
+    margin-left: auto;
+    margin-right: 120px;
+    padding-top: 220px;
+    padding-bottom: 80px;
+    color: white;
+  }
+
+  .banner .banner_img .banner_title h1 {
+    font-size: 90px;
+    line-height: 90px;
+    margin-top: 10px;
+  }
+
+  .banner .banner_img .banner_title h2 {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 4px;
+  }
+
+  .banner .banner_img .banner_title h3 {
+    font-size: 14px;
+    font-weight: 400;
+    width: 50%;
+    padding: 4px 0;
+    margin-bottom: 60px;
+    letter-spacing: 1px;
+  }
+
+  .banner .banner_img .banner_title .btn {
+    width: 150px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+
+
+}
+
 
 /* Responsive code for Tab */
 @media screen and (max-width: 800px) {
