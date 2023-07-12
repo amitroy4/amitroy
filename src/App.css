@@ -552,13 +552,11 @@ a:hover {
     font-weight: 500;
   }
 
-
-
 }
 
 
 /* Responsive code for Tab */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .banner .banner_img .banner_title {
     margin-left: auto;
     margin-right: 40px;
