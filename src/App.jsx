@@ -43,6 +43,7 @@ function App() {
   const targetRefs = {
     targetHome: useRef(null),
     targetAbout: useRef(null),
+    targetEducation: useRef(null),
     targetGallery: useRef(null),
     targetFooter: useRef(null),
   };
@@ -132,7 +133,7 @@ function App() {
                 <ul>
                   <li><a><button onClick={() => handleClick(targetRefs.targetHome)}>Home</button></a></li>
                   <li><a><button onClick={() => handleClick(targetRefs.targetAbout)}>About</button></a></li>
-                  <li><a><button>Education</button></a></li>
+                  <li><a><button onClick={() => handleClick(targetRefs.targetEducation)}>Education</button></a></li>
                   <li><a><button>Project</button></a></li>
                   <li><a><button>Activity</button></a></li>
                   <li><a><button onClick={() => handleClick(targetRefs.targetGallery)}>Gallery</button></a></li>
@@ -145,7 +146,7 @@ function App() {
             <ul>
               <li><a><button onClick={() => handleClick(targetRefs.targetHome)}>Home</button></a></li>
               <li><a><button onClick={() => handleClick(targetRefs.targetAbout)}>About</button></a></li>
-              <li><a><button>Education</button></a></li>
+              <li><a><button onClick={() => handleClick(targetRefs.targetEducation)}>Education</button></a></li>
               <li><a><button>Project</button></a></li>
               <li><a><button>Activity</button></a></li>
               <li><a><button onClick={() => handleClick(targetRefs.targetGallery)}>Gallery</button></a></li>
@@ -199,8 +200,63 @@ function App() {
         </div>
       </section>
       {/* ------------------------ About Me End ------------------------ */}
-      {/* ------------------------ Banner Start ------------------------ */}
-      {/* ------------------------ Banner End ------------------------ */}
+      {/* ------------------------ Education Start ------------------------ */}
+      <section ref={targetRefs.targetEducation} className='education'>
+        <div className="container">
+          <div className="edu_box">
+            <div className="edu_left">
+              <div className="edu_design">
+                <img src="/images/education/ewu.jpg" alt="" />
+                <div className="text">
+                  <h4>B.Sc. in CSE</h4>
+                  <h6>(2017-2022) - Dhaka, Bangladesh</h6>
+                  <h5>East West University</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, non.</p>
+                  <a href="https://www.ewubd.edu/" target='_blank'>Know more...</a>
+                </div>
+              </div>
+              <div className="edu_design">
+                <img src="/images/education/dcc.jpg" alt="" />
+                <div className="text">
+                  <h4>HSC in Science</h4>
+                  <h6>(Batch - 2016) - Dhaka, Bangladesh</h6>
+                  <h5>Dhaka City College</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, non.</p>
+                  <a href="https://www.dhakacitycollege.edu.bd/" target='_blank'>Know more...</a>
+                </div>
+              </div>
+            </div>
+            <div className="edu_middle"></div>
+            <div className="edu_right">
+              <div className="edu_design">
+                <img src="/images/education/mgbhs.jpg" alt="" />
+                <div className="text">
+                  <h4>SSC in Science</h4>
+                  <h6>(Batch - 2014) - Dhaka, Bangladesh</h6>
+                  <h5>Motijheel Govt. Boys' High School</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, non.</p>
+                  <a href="http://www.mgbhs.edu.bd/" target='_blank'>Know more...</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* ------------------------ Education End ------------------------ */}
+      {/* ------------------------ Project Start ------------------------ */}
+      <section className='project'>
+        <div className="container">
+          <p>Project</p>
+        </div>
+      </section>
+      {/* ------------------------ Project End ------------------------ */}
+      {/* ------------------------ Activity Start ------------------------ */}
+      <section className='activity'>
+        <div className="container">
+          <p>Activity</p>
+        </div>
+      </section>
+      {/* ------------------------ Activity End ------------------------ */}
       {/* ------------------------ Gallery Start ------------------------ */}
 
       {/* <!-- =================================================

@@ -319,8 +319,104 @@ ol {
 }
 
 /* ---------------------------About Me CSS End--------------------------- */
-/* ---------------------------Navbar CSS Start--------------------------- */
-/* ---------------------------Navbar CSS End--------------------------- */
+/* ------------------------ Education Start ------------------------ */
+.education {
+  padding: 120px 0;
+  background: #E4E6E1;
+}
+
+.education .edu_box {
+  width: 100%;
+}
+
+.education .edu_left {
+  width: 48%;
+}
+
+.education .edu_left .edu_design:last-child {
+  margin-top: 60px;
+}
+
+.education .edu_middle {
+  padding: 0 2px;
+  margin-right: 8px;
+  background: #000;
+  border-radius: 4px;
+}
+
+.education .edu_right {
+  display: flex;
+  align-items: center;
+  width: 48%;
+}
+
+.education .edu_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.education .edu_box img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.education .edu_design {
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  box-shadow: 4px 2px 34px 1px rgba(255, 255, 255, 1);
+  transition: all linear 0.4s;
+}
+
+.education .edu_design:hover {
+  box-shadow: 4px 2px 34px 1px rgb(165, 165, 165);
+}
+
+.education .edu_design .text {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0 30px;
+}
+
+.education .edu_design .text h4 {
+
+  font-size: 30px;
+  padding-bottom: 7px;
+}
+
+.education .edu_design .text h6 {
+  font-size: 18px;
+  padding-bottom: 7px;
+}
+
+.education .edu_design .text h5 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.education .edu_design .text a {
+  color: rgb(175, 110, 110);
+}
+
+.education .edu_design .text a:hover {
+  color: rgb(29, 0, 135);
+}
+
+
+
+/* ------------------------ Education End ------------------------ */
+/* ------------------------ Project Start ------------------------ */
+.project {
+  background: green;
+}
+
+/* ------------------------ Project End ------------------------ */
+/* ------------------------ Activity Start ------------------------ */
+.activity {
+  background: yellow;
+}
+
+/* ------------------------ Activity End ------------------------ */
 /* ---------------------------Gallery CSS Start--------------------------- */
 
 /* ========================================
@@ -555,6 +651,24 @@ a:hover {
     font-weight: 500;
   }
 
+  /* -----------Education--------- */
+  .education .edu_right {
+    display: block;
+  }
+
+  .education .edu_box {
+    display: block;
+  }
+
+  .education .edu_left {
+    width: 100%;
+  }
+
+  .education .edu_right {
+    margin-top: 60px;
+    width: 100%;
+  }
+
 }
 
 
@@ -625,6 +739,24 @@ a:hover {
 
   .navbar .visbletoggle {
     display: block;
+  }
+
+  /* -----------Education--------- */
+  .education .edu_right {
+    display: block;
+  }
+
+  .education .edu_box {
+    display: block;
+  }
+
+  .education .edu_left {
+    width: 100%;
+  }
+
+  .education .edu_right {
+    margin-top: 60px;
+    width: 100%;
   }
 
   .footer .container {
@@ -723,5 +855,9 @@ a:hover {
   .mixitup .main .images .mix img {
     width: 120px;
     height: 60px;
+  }
+
+  .education .edu_box img {
+    display: none;
   }
 }
