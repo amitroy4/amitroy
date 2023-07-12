@@ -327,7 +327,7 @@ ol {
   margin: 50px 0;
 }
 
-.mixitup .container{
+.mixitup .container {
   padding: 0 auto;
 }
 
@@ -357,7 +357,6 @@ ol {
 
 .mixitup .main .images {
   height: 450px;
-  background: red;
   overflow-y: scroll;
 }
 
@@ -372,6 +371,7 @@ ol {
 
 .mixitup .container {
   position: relative;
+  text-align: center;
 }
 
 .fullimage {
@@ -381,7 +381,7 @@ ol {
 }
 
 .fullimage img {
-  width: 100%;
+  width: 80%;
   height: 500px;
 }
 
@@ -550,6 +550,11 @@ a:hover {
   .footer .container .info {
     width: 100%;
   }
+
+  .fullimage img {
+    width: 70%;
+    height: 400px;
+  }
 }
 
 
@@ -563,5 +568,21 @@ a:hover {
   .about .container .about_text {
     padding-left: 20px;
     width: 100%;
+  }
+
+  .fullimage img {
+    width: 90%;
+    height: 200px;
+  }
+
+  .mixitup .main .images {
+    gap: 7px;
+    padding: 0 10%;
+    height: 220px;
+  }
+
+  .mixitup .main .images .mix img {
+    width: 150px;
+    height: 100px;
   }
 }
