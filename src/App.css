@@ -452,6 +452,9 @@ ol {
   font-size: 40px;
 }
 
+.banner3 .slick-center {
+  transform: scale(1.5) !important;
+}
 
 .banner3 .imgBox .bannerImages {
   width: 100%;
