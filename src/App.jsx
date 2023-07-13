@@ -315,11 +315,11 @@ function App() {
                 <h6>UI/UX Figma Design</h6>
               </div>
               <div className="imgBox">
-                <img className="serviceImages" src="/images/service/3d.png" alt="" />
+                <img className="serviceImages" src="/images/service/js.png" alt="" />
                 <h6>Deep JavaScript</h6>
               </div>
               <div className="imgBox">
-                <img className="serviceImages" src="/images/service/3d.png" alt="" />
+                <img className="serviceImages" src="/images/service/rj.png" alt="" />
                 <h6>React js</h6>
               </div>
               <div className="imgBox">
@@ -331,6 +331,36 @@ function App() {
                 <h6>MongoDB</h6>
               </div>
             </Slider>
+            <div className="res900">
+              <div className="imgBox">
+                <img className="serviceImages" src="/images/service/3d.png" alt="" />
+                <h6>Web Design</h6>
+              </div>
+              <div className="imgBox">
+                <img className="serviceImages" src="/images/service/wd.png" alt="" />
+                <h6>Web Development</h6>
+              </div>
+              <div className="imgBox">
+                <img className="serviceImages" src="/images/service/robot.png" alt="" />
+                <h6>UI/UX Figma Design</h6>
+              </div>
+              <div className="imgBox">
+                <img className="serviceImages" src="/images/service/js.png" alt="" />
+                <h6>Deep JavaScript</h6>
+              </div>
+              <div className="imgBox">
+                <img className="serviceImages" src="/images/service/rj.png" alt="" />
+                <h6>React js</h6>
+              </div>
+              <div className="imgBox">
+                <img className="serviceImages" src="/images/service/aws.png" alt="" />
+                <h6>Firebase</h6>
+              </div>
+              <div className="imgBox">
+                <img className="serviceImages" src="/images/service/net.png" alt="" />
+                <h6>MongoDB</h6>
+              </div>
+            </div>
           </div>
         </div>
       </section>

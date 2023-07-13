@@ -414,6 +414,10 @@ ol {
 
 /* ------------------------ Education End ------------------------ */
 /* ------------------------ Project Start ------------------------ */
+.res900 {
+  display: none;
+}
+
 .project {
   padding: 120px 0;
 }
@@ -788,6 +792,49 @@ a:hover {
 
 /* Responsive code for Tab */
 @media screen and (max-width: 900px) {
+  .banner4 {
+    display: none;
+  }
+
+  .res900 {
+    text-align: center;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .res900 .serviceImages {
+    width: 20px;
+  }
+
+  .res900 .imgBox {
+    margin-top: 20px;
+    background: #FAF3F3;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgba(172, 172, 172, 0.212);
+  }
+
+  .res900 .imgBox:hover {
+    cursor: pointer;
+    border: 2px solid black;
+  }
+
+  .project .container h6 {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+    color: rgb(31, 30, 30);
+    width: 150px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+
   .banner3 .slick-center {
     transform: scale(2.2) !important;
   }
@@ -921,6 +968,21 @@ a:hover {
 
 /* Responsive code for Mobile */
 @media screen and (max-width: 400px) {
+  .res900 .imgBox {
+    width: 100px;
+    padding: 10px;
+  }
+
+
+  .project .container h6 {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 23px;
+    color: rgb(31, 30, 30);
+    margin: 0 auto;
+    width: 95%;
+  }
 
   .banner3 .slick-center {
     transform: scale(2.5) !important;
