@@ -744,6 +744,9 @@ a:hover {
 
 
 @media screen and (max-width: 1200px) {
+  .banner3 .slick-center {
+    transform: scale(2.1) !important;
+  }
 
   .banner .banner_img .banner_title {
     margin-left: auto;
@@ -785,6 +788,9 @@ a:hover {
 
 /* Responsive code for Tab */
 @media screen and (max-width: 900px) {
+  .banner3 .slick-center {
+    transform: scale(2.2) !important;
+  }
 
   .banner3 .imgBox h4 {
     font-size: 12px;
