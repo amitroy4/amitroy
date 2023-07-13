@@ -188,7 +188,7 @@ function App() {
               /></h2>
               <h1>Amit Roy</h1>
               <h3>React.js || MongoDB || Express.js || Node.js || React Native</h3>
-              <button className='btn'>Explore Me</button><button onClick={() => handleClick(targetRefs.targetFooter)} className='btn'>Hire Me</button>
+              <button onClick={() => handleClick(targetRefs.targetProject)} className='btn'>Explore Me</button><button onClick={() => handleClick(targetRefs.targetFooter)} className='btn'>Hire Me</button>
             </div>
           </div>
         </div>
