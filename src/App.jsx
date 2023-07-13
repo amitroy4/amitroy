@@ -234,8 +234,8 @@ function App() {
                   <h4>B.Sc. in CSE</h4>
                   <h6>(2017-2022) - Dhaka, Bangladesh</h6>
                   <h5>East West University</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, non.</p>
-                  <a href="https://www.ewubd.edu/" target='_blank'>Know more...</a>
+                  <p>A hub of academic excellence and diverse opportunities.</p>
+                  <a href="https://www.ewubd.edu/" target='_blank'>To know more...</a>
                 </div>
               </div>
               <div className="edu_design">
@@ -244,8 +244,8 @@ function App() {
                   <h4>HSC in Science</h4>
                   <h6>(Batch - 2016) - Dhaka, Bangladesh</h6>
                   <h5>Dhaka City College</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, non.</p>
-                  <a href="https://www.dhakacitycollege.edu.bd/" target='_blank'>Know more...</a>
+                  <p>It is a popular educational institution known for its quality teaching.</p>
+                  <a href="https://www.dhakacitycollege.edu.bd/" target='_blank'>To know more...</a>
                 </div>
               </div>
             </div>
@@ -257,8 +257,8 @@ function App() {
                   <h4>SSC in Science</h4>
                   <h6>(Batch - 2014) - Dhaka, Bangladesh</h6>
                   <h5>Motijheel Govt. Boys' High School</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, non.</p>
-                  <a href="http://www.mgbhs.edu.bd/" target='_blank'>Know more...</a>
+                  <p>An old and respected school, shaping young minds for years.</p>
+                  <a href="http://www.mgbhs.edu.bd/" target='_blank'>To know more...</a>
                 </div>
               </div>
             </div>
@@ -366,11 +366,43 @@ function App() {
       </section>
       {/* ------------------------ Project End ------------------------ */}
       {/* ------------------------ Activity Start ------------------------ */}
-      <section ref={targetRefs.targetActivity} className='activity'>
-        <div className="container">
-          <p>Activity</p>
+      <section className='activity'>
+        <div ref={targetRefs.targetActivity} className='education'>
+          <div className="container">
+            <div className="title_edu">
+              <h2>Activity</h2>
+            </div>
+            <div className="edu_box">
+              <div className="edu_left">
+                <div className="edu_design">
+                  <img src="/images/gallery/g1.png" alt="" />
+                  <div className="text">
+                    <h4>Guitar Playing</h4>
+                    <h6>(2018-Continue) - Dhaka, Bangladesh</h6>
+                    <h5>Jago Art Center</h5>
+                    <p>I started playing the guitar in 2018 and have been learning from Jago Art Center. I'm currently in my third year of playing. This hobby helps me relax and brings me a lot of happiness. It allows me to express myself and be creative with music.</p>
+                    <a href="https://www.facebook.com/Jagoartcentre/" target='_blank'>To know more...</a>
+                  </div>
+                </div>
+              </div>
+              <div className="edu_middle"></div>
+              <div className="edu_right">
+                <div className="edu_design">
+                  <img src="/images/gallery/s2.jpg" alt="" />
+                  <div className="text">
+                    <h4>Social Work</h4>
+                    <h6>(2015 - Continue) - Dhaka, Bangladesh</h6>
+                    <h5>Bondhon Foundation</h5>
+                    <p>As the president of Bondhon Foundation since its establishment in 2015, I have been leading efforts to support street children by providing them with food, clothing, shelter, education, and emotional assistance. Through our outreach programs and collaborations, we strive to break the cycle of poverty and create a brighter future for these vulnerable children.</p>
+                    <a href="https://www.facebook.com/bondhonfoundationbd" target='_blank'>To know more...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
       {/* ------------------------ Activity End ------------------------ */}
       {/* ------------------------ Gallery Start ------------------------ */}
 
