@@ -820,7 +820,7 @@ a:hover {
 
   .res900 .imgBox:hover {
     cursor: pointer;
-    border: 2px solid black;
+    border: 1.5px solid #ef629396;
   }
 
   .project .container h6 {
