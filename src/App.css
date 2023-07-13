@@ -572,6 +572,10 @@ ol {
   border-radius: 1px;
 }
 
+.activity .education .edu_box img {
+  display: block;
+}
+
 /* ------------------------ Activity End ------------------------ */
 /* ---------------------------Gallery CSS Start--------------------------- */
 
