@@ -530,6 +530,7 @@ ol {
 
 .banner4 .imgBox:hover {
   border: 2px solid #9675CE;
+  cursor: pointer;
 }
 
 .banner4 .imgBox h6 {
