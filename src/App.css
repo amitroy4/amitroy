@@ -323,6 +323,9 @@ ol {
 .education {
   padding: 120px 0;
   background: #E4E6E1;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/bwfc-e55b0.appspot.com/o/banner%2Fbannershape.png?alt=media&token=1d77f81a-71ce-46cc-96ad-d27704cd8a5d");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .education .title_edu h2 {
@@ -419,6 +422,10 @@ ol {
 }
 
 .project {
+  background: #ebabab41;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/bwfc-e55b0.appspot.com/o/banner%2Fbannershape.png?alt=media&token=1d77f81a-71ce-46cc-96ad-d27704cd8a5d");
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 120px 0;
 }
 
@@ -466,6 +473,8 @@ ol {
 }
 
 .banner3 .imgBox {
+  border-radius: 10px;
+  overflow: hidden;
   background: white;
 }
 

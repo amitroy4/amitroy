@@ -205,8 +205,8 @@ function App() {
           <div className="about_text">
             <h5>About Me</h5>
             <div className="para">
-              <p>I am a highly motivated fresher with a strong passion for MERN full-stack web development, possessing  a comprehensive understanding of the MERN full stack, including MongoDB, Express.js, React.js, and Node.js. My skilled areas are HTML5, CSS3, and JavaScript with experience in RESTful API development and integration. I am ready to share knowledge and contribute to the growth and success of aspiring developers as a software engineer.</p>
-              <p>I’m now preparing myself for MERN full-stack web development. My future goal is to make web applications more powerful with strong security.</p>
+              <p>I'm a tech enthusiast from Dhaka with a big vision. I love working with React JS, JavaScript, MongoDB, and more to create amazing web applications. What sets me apart is my unique perspective and attention to detail, which help me solve problems in creative ways. Outside of technology, I enjoy playing the guitar and have a passion for helping street children. </p>
+              <p>I believe in the power of education, so I use my tech skills to provide them with learning opportunities. My goal is to make a positive impact on society by revolutionizing the tech industry and inspiring others to follow their passions.</p>
             </div>
             <h5>Hire Me</h5>
             <div className="icons">
