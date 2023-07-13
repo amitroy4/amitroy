@@ -782,6 +782,15 @@ a:hover {
 
 /* Responsive code for Tab */
 @media screen and (max-width: 900px) {
+
+  .banner3 .imgBox h4 {
+    font-size: 12px;
+  }
+
+  .banner3 .imgBox a {
+    font-size: 6px;
+  }
+
   .banner .banner_img .banner_title {
     margin-left: auto;
     margin-right: 40px;
@@ -903,6 +912,16 @@ a:hover {
 
 /* Responsive code for Mobile */
 @media screen and (max-width: 400px) {
+
+  .banner3 .imgBox h4 {
+    padding-top: 10px;
+    font-size: 6px;
+  }
+
+  .banner3 .imgBox a {
+    margin-top: 5px;
+    font-size: 3px;
+  }
 
   .banner .banner_img .banner_title {
     margin-left: auto;
