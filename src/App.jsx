@@ -1,7 +1,7 @@
 import './App.css'
 import resumeAmit from '../public/pdf/resume_amit.pdf'
 import amitroy2 from '/images/amitroy2.jpg'
-import { AiFillLinkedin, AiFillGithub, AiFillMessage, AiFillInstagram, AiOutlineMail } from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub, AiFillMessage, AiFillInstagram, AiOutlineMail, AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { BsFacebook, BsFillPinMapFill, BsFillTelephoneFill } from "react-icons/bs";
 import { VscThreeBars } from "react-icons/vsc";
 import { RxCross1 } from "react-icons/rx";
@@ -11,6 +11,7 @@ import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
 import { useEffect, useRef, useState } from 'react';
 import MixItUp from 'mixitup';
+import Slider from "react-slick";
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
   let [toggleCondition, setToggleCondition] = useState(true)
   const [isFullSize, setIsFullSize] = useState(false);
   let [fullImage, setFullImage] = useState("")
+
 
   const handleImgClick = (e) => {
     if (!isFullSize) {
@@ -74,6 +76,22 @@ function App() {
     }
 
   }
+
+  var bannerSettings = {
+
+    centerMode: true,
+    centerPadding: '10px',
+    slidesToShow: 3,
+    infinite: true,
+    arrow: true,
+  };
+  var serviceSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+  };
 
   let handleSubmit = () => {
     if (name == "") {
@@ -205,6 +223,9 @@ function App() {
       {/* ------------------------ Education Start ------------------------ */}
       <section ref={targetRefs.targetEducation} className='education'>
         <div className="container">
+          <div className="title_edu">
+            <h2>Education</h2>
+          </div>
           <div className="edu_box">
             <div className="edu_left">
               <div className="edu_design">
@@ -246,9 +267,71 @@ function App() {
       </section>
       {/* ------------------------ Education End ------------------------ */}
       {/* ------------------------ Project Start ------------------------ */}
-      <section ref={targetRefs.targetProject} className='project'>
+      <section className='project'>
         <div className="container">
-          <p>Project</p>
+          <div className="bannerBox btncng">
+            <h6 ref={targetRefs.targetProject}>My Projects</h6>
+            <Slider className='banner3' {...bannerSettings}>
+              <div className="imgBox">
+                <img className="bannerImages" src="/images/profile/p1.png" alt="" />
+                <h4>Alap Chatting Application</h4>
+                <a href="https://aalap.netlify.app/" target='_blank'>Visit This Site..</a>
+              </div>
+              <div className="imgBox">
+                <img className="bannerImages" src="/images/profile/p2.png" alt="" />
+                <h4>Modern Calculator</h4>
+                <a href="https://moder-calculator.netlify.app/" target='_blank'>Visit This Site..</a>
+              </div>
+              <div className="imgBox">
+                <img className="bannerImages" src="/images/profile/p3.png" alt="" />
+                <h4>BWFC Dynamic Page Design</h4>
+                <a href="https://bwfc2202project.netlify.app/" target='_blank'>Visit This Site..</a>
+              </div>
+              <div className="imgBox">
+                <img className="bannerImages" src="/images/profile/p1.png" alt="" />
+                <h4>Alap Chatting Application</h4>
+                <a href="https://aalap.netlify.app/" target='_blank'>Visit This Site..</a>
+              </div>
+              <div className="imgBox">
+                <img className="bannerImages" src="/images/profile/p3.png" alt="" />
+                <h4>BWFC Dynamic Page Design</h4>
+                <a href="https://bwfc2202project.netlify.app/" target='_blank'>Visit This Site..</a>
+              </div>
+            </Slider>
+          </div>
+          <h6>EXPERT IN</h6>
+          <div className="bannerBox btncng">
+            <Slider className='banner4' {...serviceSettings}>
+              <div className="imgBox">
+                <img className="serviceImages" src="/images/service/3d.png" alt="" />
+                <h6>Web Design</h6>
+              </div>
+              <div className="imgBox">
+                <img className="serviceImages" src="/images/service/wd.png" alt="" />
+                <h6>Web Development</h6>
+              </div>
+              <div className="imgBox">
+                <img className="serviceImages" src="/images/service/robot.png" alt="" />
+                <h6>UI/UX Figma Design</h6>
+              </div>
+              <div className="imgBox">
+                <img className="serviceImages" src="/images/service/3d.png" alt="" />
+                <h6>Deep JavaScript</h6>
+              </div>
+              <div className="imgBox">
+                <img className="serviceImages" src="/images/service/3d.png" alt="" />
+                <h6>React js</h6>
+              </div>
+              <div className="imgBox">
+                <img className="serviceImages" src="/images/service/aws.png" alt="" />
+                <h6>Firebase</h6>
+              </div>
+              <div className="imgBox">
+                <img className="serviceImages" src="/images/service/net.png" alt="" />
+                <h6>MongoDB</h6>
+              </div>
+            </Slider>
+          </div>
         </div>
       </section>
       {/* ------------------------ Project End ------------------------ */}
