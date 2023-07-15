@@ -421,6 +421,15 @@ ol {
 
 /* ------------------------ Education End ------------------------ */
 /* ------------------------ Project Start ------------------------ */
+
+.banner3 .slick-list {
+  margin-left: 20px;
+}
+
+.slick-slider .slick-prev {
+  margin-left: 2%;
+}
+
 .res900 {
   display: none;
 }
@@ -1007,6 +1016,10 @@ a:hover {
   .res900 .imgBox {
     width: 100px;
     padding: 10px;
+  }
+
+  .slick-slider .slick-prev {
+    margin-left: 5%;
   }
 
 
