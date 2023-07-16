@@ -781,10 +781,15 @@ a:hover {
 }
 
 .footer .copyright {
+
   padding: 10px 0;
-  text-align: center;
   background: #333333;
   color: #c2c2c2;
+
+}
+
+.footer .copyright p {
+  text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 500;
