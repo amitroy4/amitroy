@@ -151,6 +151,7 @@ ol {
 }
 
 .banner .banner_img {
+  margin-top: 20px;
   width: 100%;
   background-image: url('/public/images/amit.png');
   background-repeat: no-repeat;
@@ -184,7 +185,7 @@ ol {
 }
 
 .banner .banner_img .banner_title h3 {
-  background: #ffffff8e;
+  background: #ffffffbc;
   font-family: 'Abril Fatface', cursive;
   font-size: 12px;
   font-weight: 600;
@@ -837,6 +838,10 @@ a:hover {
 
 /* Responsive code for Tab */
 @media screen and (max-width: 900px) {
+  .banner .banner_img .banner_title h3 {
+    height: 40px;
+  }
+
   .banner4 {
     display: none;
   }
@@ -1013,6 +1018,11 @@ a:hover {
 
 /* Responsive code for Mobile */
 @media screen and (max-width: 400px) {
+
+  .banner .banner_img {
+    margin-top: 30px;
+  }
+
   .res900 .imgBox {
     width: 100px;
     padding: 10px;

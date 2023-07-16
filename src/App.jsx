@@ -187,7 +187,9 @@ function App() {
                 sequence={['MERN Full Stack Developer', 3000]}
               /></h2>
               <h1>Amit Roy</h1>
-              <h3>React.js || MongoDB || Express.js || Node.js || React Native</h3>
+              <h3><TypeAnimation
+                sequence={['React.js || MongoDB || Express.js || Node.js || React Native', 3000]}
+              /></h3>
               <button onClick={() => handleClick(targetRefs.targetProject)} className='btn'>Explore Me</button><button onClick={() => handleClick(targetRefs.targetFooter)} className='btn'>Hire Me</button>
             </div>
           </div>
