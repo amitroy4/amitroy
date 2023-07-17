@@ -619,6 +619,7 @@ ol {
 }
 
 .mixitup .main .images {
+  justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -843,6 +844,22 @@ a:hover {
 
 /* Responsive code for Tab */
 @media screen and (max-width: 900px) {
+  .about .container .about_text {
+    padding: 50px 0;
+  }
+
+  .education {
+    padding: 50px 0;
+  }
+
+  .project {
+    padding: 30px 0;
+  }
+
+  .mixitup {
+    padding: 40px 0;
+  }
+
   .banner .banner_img .banner_title h3 {
     height: 40px;
   }
@@ -998,11 +1015,11 @@ a:hover {
   }
 
   .footer .container .msg input {
-    width: 80%;
+    width: 100%;
   }
 
   .footer .container .msg textarea {
-    width: 80%;
+    width: 100%;
   }
 
   .footer .container .info {
@@ -1024,6 +1041,10 @@ a:hover {
 /* Responsive code for Mobile */
 
 @media screen and (max-width: 640px) {
+  .banner .banner_img .banner_title .btn {
+    margin-left: 0;
+    margin-right: 30px;
+  }
 
   .banner .banner_img {
     background-image: url('/public/images/amit2.png');
@@ -1031,7 +1052,14 @@ a:hover {
   }
 
   .banner .banner_img .banner_title {
+    text-align: start;
+    margin-right: 0;
+    margin-left: 60px;
     padding-top: 400px;
+  }
+
+  .banner .banner_img .banner_title h3 {
+    margin-left: 0;
   }
 }
 
@@ -1039,9 +1067,15 @@ a:hover {
   .banner .banner_img .banner_title {
     padding-top: 280px;
   }
+
+  .mixitup .main .button button {
+    margin: 10px;
+  }
 }
 
 @media screen and (max-width: 400px) {
+
+
 
   .banner .banner_img {
     background-image: url('/public/images/amit2.png');
@@ -1083,11 +1117,12 @@ a:hover {
   }
 
   .banner .banner_img .banner_title {
-    margin-left: auto;
-    margin-right: 40px;
+    text-align: start;
+    margin-right: 0;
+    margin-left: 30px;
     padding-bottom: 60px;
-    color: white;
   }
+
 
   .banner .banner_img .banner_title h1 {
     font-size: 50px;
@@ -1134,7 +1169,6 @@ a:hover {
   }
 
   .mixitup .main .images {
-    justify-content: space-around;
     height: 210px;
   }
 
@@ -1149,8 +1183,21 @@ a:hover {
 }
 
 
-@media screen and (max-width: 328px) {
+@media screen and (max-width: 360px) {
   .banner .banner_img .banner_title {
     padding-top: 190px;
+  }
+
+  .footer .container .info .item,
+  a {
+    width: 90%;
+  }
+
+  .res900 {
+    width: 90%;
+  }
+
+  .res900 .imgBox {
+    width: 110px;
   }
 }
